@@ -1,0 +1,9 @@
+<div>
+
+        <p class="member-result">
+                {{ "Name: " + familyMember.name + " | Surname: " + familyMember.surname + " | Age: " + familyMember.age + " | Occupation: " + familyMember.occupation}}
+                <button (click) = "onDelete(familyMember)" class="delete-button">x</button> 
+                <button [routerLink]="['/update', familyMember.id]" class="update-button">u</button>
+         </p>
+
+</div>

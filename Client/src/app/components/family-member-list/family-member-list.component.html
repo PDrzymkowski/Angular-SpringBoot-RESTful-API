@@ -1,0 +1,11 @@
+<div>
+
+    <app-family-member
+    *ngFor = "let familyMember of familyMembers"
+    [familyMember] = "familyMember"
+    (deletedFamilyMember) = "deleteFamilyMember($event)"
+    >
+    </app-family-member>
+
+
+</div>

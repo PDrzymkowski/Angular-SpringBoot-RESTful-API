@@ -1,0 +1,27 @@
+.member-result {
+
+    background: #f4f4f4;
+    padding: 10px;
+    border-bottom: 1px #ccc dotted;
+    max-width: 90%;
+}
+
+.delete-button {
+    background: rgb(221, 15, 15);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    float: right;
+
+}
+.update-button {
+    background: rgb(53, 15, 221);
+    color: #fff;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    float: right;
+
+}

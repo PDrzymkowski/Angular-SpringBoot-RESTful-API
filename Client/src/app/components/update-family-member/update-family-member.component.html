@@ -1,0 +1,55 @@
+<div class="add-family-member">
+        <form (ngSubmit) = "onSubmit()" #userForm = "ngForm">
+            <div class="add-form-div">
+                <label for="name">Name:   </label>
+                <input type="text" 
+                    [(ngModel)] = "familyMember.name"
+                    class="add-form"
+                    name="name"
+                    id="name"
+                    placeholder="Enter family member name..."
+                    required #name = "ngModel"
+                    >
+            </div>
+    
+            <div class="add-form-div">
+                    <label for="surname">Surname:   </label>
+                    <input type="text" 
+                        [(ngModel)] = "familyMember.surname"
+                        class="add-form"
+                        name="surname"
+                        id="surname"
+                        placeholder="Enter family member surname..."
+                        required #surname = "ngModel"
+                        >
+                </div>
+    
+                <div class="add-form-div">
+                        <label for="age">Age:   </label>
+                        <input type="text" 
+                            [(ngModel)] = "familyMember.age"
+                            class="add-form"
+                            name="age"
+                            id="age"
+                            placeholder="Enter family member age..."
+                            required #age = "ngModel"
+                            >
+                    </div>
+    
+                    <div class="add-form-div">
+                            <label for="occupation">Occupation:   </label>
+                            <input type="text" 
+                                [(ngModel)] = "familyMember.occupation"
+                                class="add-form"
+                                name="occupation"
+                                id="occupation"
+                                placeholder="Enter family member occupation..."
+                                required #occupation = "ngModel"
+                                >
+                        </div>
+    
+            <button type="submit" [disabled]="!userForm.form.valid"
+            class="btn-add-member">Submit</button>
+        </form>
+    </div>
+    
